@@ -13,10 +13,10 @@ const config: Config = {
     extend: {
       colors: {
         background: "#1C1C26",
-        container: "#2A2838",
         accent: "#E9B67E",
+        "accent-hover": "#edc191",
         hover: "#3C3A49",
-        surface: "#CAC4CD",
+        surface: "#E5E7EB",
       },
     },
   },

@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply text-surface bg-background;
-    }
-    h1 {
-        @apply font-medium
-    }
+  body {
+    @apply text-surface bg-black;
+  }
+  h1 {
+    @apply font-medium
+  }
 }
 
 @layer components {
-    .scrollbar-custom {
-        @apply scrollbar-thin scrollbar-thumb-accent scrollbar-thumb-rounded-full
-    }
-    .mainnav-header-default {
-        @apply w-full h-full flex p-3
-    }
+  .scrollbar-custom {
+    @apply scrollbar-thin scrollbar-thumb-accent scrollbar-thumb-rounded-full
+  }
+  .mainnav-header-default {
+    @apply w-full h-full flex p-3
+  }
 }
