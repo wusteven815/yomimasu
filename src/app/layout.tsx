@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   description: "A multimodal web reader and player",
 };
 
-type Props = {
+interface Props {
   children: ReactNode;
-};
+}
 
 export default function Layout({ children }: Props) {
   return (
