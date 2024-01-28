@@ -12,11 +12,12 @@ const config: Config = {
     },
     extend: {
       colors: {
-        background: "#1C1C26",
+        container: "#0f1117",
         accent: "#E9B67E",
         "accent-hover": "#edc191",
         hover: "#3C3A49",
         surface: "#E5E7EB",
+        outline: "#32353C",
       },
     },
   },

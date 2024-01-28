@@ -43,9 +43,10 @@
     ],
     "linebreak-style": "off",
     "prettier/prettier": [
-      "error",
+      "warn",
       {
-        "endOfLine": "crlf"
+        "endOfLine": "crlf",
+        "printWidth": 100
       }
     ],
     "react/require-default-props": "off"
