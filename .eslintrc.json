@@ -45,7 +45,6 @@
     "prettier/prettier": [
       "warn",
       {
-        "endOfLine": "crlf",
         "printWidth": 100
       }
     ],

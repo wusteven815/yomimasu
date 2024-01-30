@@ -27,9 +27,9 @@ async function addIcon() {
   icons.push([`${name.replaceAll("_", "-")}-true`, await getSVGPathString(name, true)]);
   icons.sort((a, b) => a[0].localeCompare(b[0]));
 
-  const iconTexts = icons.map((icon) => `  ["${icon[0]}", "${icon[1]}"],`).join("\r\n");
+  const iconTexts = icons.map((icon) => `  ["${icon[0]}", "${icon[1]}"],`).join("\n");
 
-  const newFile = `/* eslint-disable prettier/prettier */\r\n\r\nconst data: Map<string, string> = new Map([\r\n${iconTexts}\r\n]);\r\n\r\nexport default data;\n`;
+  const newFile = `/* eslint-disable prettier/prettier */\n\nconst data: Map<string, string> = new Map([\n${iconTexts}\n]);\n\nexport default data;\n`;
   await fs.writeFile(ICON_MAP_PATH, newFile);
   console.log(`Added icon "${name}" to "${ICON_MAP_PATH}"`);
 }
